@@ -31,5 +31,6 @@
   }
   button:hover {
     color: darkorange;
+    cursor: pointer;
   }
 </style>

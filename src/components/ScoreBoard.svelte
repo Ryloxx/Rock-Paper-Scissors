@@ -18,6 +18,7 @@
     text-transform: uppercase;
     font-size: 30px;
     line-height: 28px;
+    font-weight: 700;
   }
   .wrapper {
     flex: 1 1 auto;

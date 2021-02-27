@@ -50,8 +50,8 @@
 
 <style>
   .hand {
-    height: 20vmin;
-    width: 20vmin;
+    height: calc(20vmin + 2vmax);
+    width: calc(20vmin + 2vmax);
     display: grid;
     place-content: center;
     place-items: center;
@@ -63,8 +63,8 @@
     background-color: rgba(0, 0, 0, 0.2);
   }
   .img-wrapper {
-    height: 15vmin;
-    width: 15vmin;
+    height: calc(15vmin + 1vmax);
+    width: calc(15vmin + 1vmax);
     position: relative;
     border-radius: 50%;
     background-color: white;

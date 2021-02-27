@@ -39,11 +39,13 @@
   }
   .title {
     margin: 5rem auto;
+    font-weight: 700;
     text-align: center;
     position: sticky;
     top: 0;
     left: 0;
     background-color: white;
+    font-size: 25px;
   }
 
   .img-wrapper {
