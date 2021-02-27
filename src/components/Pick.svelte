@@ -6,12 +6,12 @@
   export let glow;
 </script>
 
-<article class:glow>
+<div class="pick" class:glow>
   <div>
     <Hand {glow} type={pick} />
   </div>
   <div>{label}</div>
-</article>
+</div>
 
 <style>
   div {
@@ -19,15 +19,15 @@
     letter-spacing: 2px;
     margin: 1rem auto;
   }
-  article > * {
+  .pick > * {
     margin: 1.5rem auto;
   }
-  article {
+  .pick {
     display: flex;
     flex-direction: column;
   }
   @media (min-width: 1366px) {
-    article {
+    .pick {
       flex-direction: column-reverse;
     }
   }

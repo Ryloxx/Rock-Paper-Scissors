@@ -131,6 +131,8 @@
   }
   .bot {
     text-align: center;
+    max-width: 1366px;
+    padding: 0 2rem;
   }
   @media (min-width: 1366px) {
     .bot {

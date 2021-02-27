@@ -17,6 +17,7 @@
     padding: 1rem 2rem;
     border-radius: 10px;
     letter-spacing: 3px;
+    font-size: 1rem;
   }
   .fullWidth {
     width: 100%;

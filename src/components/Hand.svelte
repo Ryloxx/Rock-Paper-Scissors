@@ -32,23 +32,24 @@
 </script>
 
 {#if type}
-  <article
-    in:scale={{ start: 0.9}}
+  <div
+    class="hand"
+    in:scale={{ start: 0.95 }}
     class:glow
     style={`background-image:${gradient};`}
   >
-    <div>
+    <div class="img-wrapper">
       <img src={`../images/${selected_type}`} alt="" />
     </div>
-  </article>
+  </div>
 {:else}
-  <article class="placehodler">
+  <div class="hand placehodler">
     <Loader />
-  </article>
+  </div>
 {/if}
 
 <style>
-  article {
+  .hand {
     height: 20vmin;
     width: 20vmin;
     display: grid;
@@ -57,40 +58,17 @@
     border-radius: 50%;
     box-shadow: 0px 8px 20px 0px black;
   }
-  article.placehodler {
+  .hand.placehodler {
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
   }
-  /* article.placehodler div:nth-child(0) {
-    animation: fade 1.5s 0s linear infinite;
-  }
-  article.placehodler div:nth-child(1) {
-    animation: fade 1.5s 0.5s linear infinite;
-  }
-  article.placehodler div:nth-child(2) {
-    animation: fade 1.5s 1s linear infinite;
-  } */
-  @keyframes fade {
-    0% {
-      opacity: 0.3;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 0.3;
-      transform: scale(1);
-    }
-  }
-  div {
+  .img-wrapper {
     height: 15vmin;
     width: 15vmin;
     position: relative;
     border-radius: 50%;
     background-color: white;
+    box-shadow: 0px 0px 5px black inset;
   }
   img {
     position: absolute;
@@ -98,10 +76,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: contain;
-    height: 70%;
-    width: 70%;
+    height: 55%;
+    width: 55%;
   }
-  article.glow {
+  .hand.glow {
     animation: glowEffect 3s linear infinite;
   }
 </style>

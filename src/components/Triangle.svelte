@@ -10,7 +10,7 @@
   }
 </script>
 
-<section>
+<div class="triangle">
   <div on:click={() => pickEvent('rock')} class="hand left">
     <Hand type={'rock'} />
   </div>
@@ -20,10 +20,10 @@
   <div on:click={() => pickEvent('paper')} class="hand mid">
     <Hand type={'paper'} />
   </div>
-</section>
+</div>
 
 <style>
-  section {
+  .triangle {
     position: relative;
     background-image: url('../images/bg-triangle.svg');
     background-size: contain;

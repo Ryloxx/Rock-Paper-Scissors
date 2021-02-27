@@ -65,9 +65,8 @@ game.subscribe((state) => {
       innerState.done = true;
       const winner = getWinner(state.playerPick, state.housePick);
       innerState.winner = winner;
-      if (winner === 0) {
-        innerState.score += 1;
-      }
+      innerState.score += winner === 0 ? 1 : winner === 1 ? -1 : 0;
+      innerState.score = Math.max(0, innerState.score);
       return innerState;
     });
   }

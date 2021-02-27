@@ -4,30 +4,30 @@
   export let score;
 </script>
 
-<section>
+<div class="scoreboard">
   <div class="wrapper">
     <div class="item">Rock</div>
     <div class="item">Paper</div>
     <div class="item">Scissors</div>
   </div>
   <ScoreDisplayer value={score} />
-</section>
+</div>
 
 <style>
   .item {
     text-transform: uppercase;
-    font-size: 20px;
-    line-height: 18px;
+    font-size: 30px;
+    line-height: 28px;
   }
   .wrapper {
-    padding: 1rem;
     flex: 1 1 auto;
   }
-  section {
+  .scoreboard {
     border: 3px solid hsl(217, 16%, 45%);
     padding: 1rem;
     border-radius: 10px;
     display: flex;
     margin: 1rem;
+    align-items: center;
   }
 </style>

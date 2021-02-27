@@ -4,7 +4,7 @@
 </script>
 
 {#if show}
-  <section>
+  <div class="modal">
     <div class="inner">
       <div class="img-wrapper">
         <div class="img" on:click={() => (show = false)} />
@@ -15,11 +15,11 @@
         <div />
       </div>
     </div>
-  </section>
+  </div>
 {/if}
 
 <style>
-  section {
+  .modal {
     position: fixed;
     top: 0;
     left: 0;

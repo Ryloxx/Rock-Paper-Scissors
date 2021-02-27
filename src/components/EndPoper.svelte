@@ -5,7 +5,7 @@
   export let endMessage = '';
 </script>
 
-<section>
+<div class="endPoper">
   <div
     style={`font-size: 70px;
 				text-transform: uppercase;
@@ -15,10 +15,10 @@
     {endMessage}
   </div>
   <Button on:click={onRestart} label="Play again" full fullWidth />
-</section>
+</div>
 
 <style>
-  section {
+  .endPoper {
     display: flex;
     flex-direction: column;
     align-items: center;

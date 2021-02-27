@@ -13,8 +13,8 @@
     position: relative;
     height: 3vmin;
     width: 3vmin;
-    background-color: white;
-    color: white;
+    background-color: hsl(217, 19%, 57%);
+    color: hsl(217, 19%, 57%);
     border-radius: 50%;
   }
   .dots div::after {
