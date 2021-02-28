@@ -6,12 +6,7 @@
 </script>
 
 <div class="endPoper">
-  <div
-    style={`font-size: 70px;
-				text-transform: uppercase;
-                margin:1rem auto;
-				font-weight: 700;`}
-  >
+  <div class="message">
     {endMessage}
   </div>
   <Button on:click={onRestart} label="Play again" full fullWidth />
@@ -23,5 +18,12 @@
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
+  }
+  .message {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    font-weight: 700;
+    white-space: nowrap;
   }
 </style>
